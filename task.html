@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <title>To Do List</title>
+</head>
+<body>
+        <div id="taskApp">
+        <h2>To Do List</h2>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="Title" required>
+            <textarea id="taskDescription" placeholder="Description" rows="5" required></textarea>
+            <select id="taskStatus">
+                <option value="Status" selected>Status</option>
+                <option value="pending">Pending</option>
+                <option value="ongoing">Ongoing</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

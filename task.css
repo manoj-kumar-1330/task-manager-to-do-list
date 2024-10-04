@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff0066, #333399);
+    background-size: 400% 400%; /* This is needed for the animation */
+    animation: gradientAnimation 15s ease infinite; /* Animate the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Define the animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#taskApp {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, select, button, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    cursor: pointer;
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #4a90e2;
+}
+#update {
+    background-color: greenyellow;
+}
+#update:hover {
+    background-color: #a8d08d;
+}
+#delete {
+    background-color: red;
+}
+#delete:hover {
+    background-color: #d9534f;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-info {
+    flex: 1;
+}
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.task-actions button {
+    margin-left: 10px;
+}
+h1 {
+    color: black;
+    padding: 10px;
+    font-size: 3rem;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin: 0;
+}
